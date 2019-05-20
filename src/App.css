@@ -1,10 +1,4 @@
-/* *,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*
 html {
   font-size: 80%;
   font-family: 'Open Sans', sans-serif;
@@ -14,21 +8,20 @@ body {
 }
 :root {
   background-color: white;
-}
-.app {
+} */
+/* .app {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.calculator {
-  height: 80vh;
-  width: 25%;
+} */
+/* .calculator {
+  height: 100%;
+  width: 100%;
   box-shadow: 0 2rem 4rem;
-  background-color: lightslategray;
-}
-.result-screen {
+} */
+/* .result-screen {
   height: 19vh;
   font-size: 8rem;
   font-weight: 600;
@@ -44,8 +37,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
-.screen {
+} */
+/* .screen {
   height: 25vh;
   width: 100%;
   padding: 0 2rem;
@@ -53,8 +46,8 @@ body {
   white-space: no-wrap;
   color: black;
   background-color: pink;
-}
-.keypadrow {
+} */
+/* .keypadrow {
   height: 11vh;
   width: 100%;
   display: flex;

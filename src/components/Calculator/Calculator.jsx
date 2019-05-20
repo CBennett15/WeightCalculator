@@ -11,12 +11,11 @@ export class Calculator extends React.Component {
     result: 0,
     weight: 'kg',
     input: '',
-    toggleWeight: true,
   };
   render() {
     const { result, weight, input } = this.state;
     return (
-      <div>
+      <div className="calculator">
         <ResultScreen result={result} weight={weight} />
         <CalculationScreen input={input} />
         <WeightConverter
