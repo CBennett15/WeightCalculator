@@ -1,33 +1,86 @@
-.App {
-  text-align: center;
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 80%;
+  font-family: 'Open Sans', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: inherit;
+}
+:root {
+  background-color: white;
+}
+.app {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.calculator {
+  height: 80vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem;
+  background-color: lightslategray;
+}
+.result-screen {
+  height: 19vh;
+  font-size: 8rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.calculate-screen {
+  height: 6vh;
+  font-size: 2.5rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.screen {
+  height: 25vh;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: no-wrap;
+  color: black;
+  background-color: pink;
+}
+.keypadrow {
+  height: 11vh;
+  width: 100%;
+  display: flex;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.keypad {
+  height: 55vh;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: white;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
 }
+.button:hover {
+  color: lightblue;
+  background-color: orange;
+}
+.button:active {
+  transform: scale(0.95);
+} */
