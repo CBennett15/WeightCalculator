@@ -22,10 +22,11 @@ export class Calculator extends React.Component {
           pounds={this.handlePoundsToKilos}
           kilos={this.handleKilosToPounds}
           weight={weight}
+          input={input}
         />
         <Keypad
           onClick={this.handleClick}
-          onSubmit={this.handleSubmit}
+          onSubmit={this.handleEquals}
           onClear={this.handleClear}
           input={input}
         />
@@ -33,7 +34,7 @@ export class Calculator extends React.Component {
       </div>
     );
   }
-  handleSubmit = (e) => {
+  handleEquals = (e) => {
     const result = math.eval(e.target.value);
     this.setState({ result: result });
   };
@@ -43,9 +44,9 @@ export class Calculator extends React.Component {
     });
   };
   handleClear = () => {
-    this.setState({ result: 0, input: '' });
+    this.setState({ result: 0, input: '', pressedEqual: false });
   };
-  handlePoundsToKilos = () => {
+  handlePoundsToKilos = (e) => {
     const poundConversion = (this.state.result / 2.2046).toFixed(1);
     this.setState({ result: poundConversion, weight: 'kg' });
   };
@@ -55,6 +56,9 @@ export class Calculator extends React.Component {
   };
   handleDivision = (e) => {
     const dividedResult = (this.state.result / e.target.value).toFixed(1);
-    this.setState({ result: dividedResult });
+    this.setState({
+      result: dividedResult,
+      input: this.state.input + '/' + e.target.value,
+    });
   };
 }

@@ -35,7 +35,7 @@ export const Keypad = ({ onClick, onSubmit, onClear, input }) => {
 
         <Button onClick={onClick} value="." text="." />
 
-        <Button onClick={onSubmit} value={input} text="Enter" />
+        <Button onClick={onSubmit} value={input} text="=" />
 
         <Button onClick={onClick} value="+" text="+" />
       </div>
