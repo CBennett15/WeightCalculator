@@ -18,19 +18,21 @@ export class Calculator extends React.Component {
       <div className="calculator">
         <ResultScreen result={result} weight={weight} />
         <CalculationScreen input={input} />
-        <WeightConverter
-          pounds={this.handlePoundsToKilos}
-          kilos={this.handleKilosToPounds}
-          weight={weight}
-          input={input}
-        />
-        <Keypad
-          onClick={this.handleClick}
-          onSubmit={this.handleEquals}
-          onClear={this.handleClear}
-          input={input}
-        />
-        <Division onClick={this.handleDivision} />
+        <div className="buttonlayout">
+          <WeightConverter
+            pounds={this.handlePoundsToKilos}
+            kilos={this.handleKilosToPounds}
+            weight={weight}
+            input={input}
+          />
+          <Keypad
+            onClick={this.handleClick}
+            onSubmit={this.handleEquals}
+            onClear={this.handleClear}
+            input={input}
+          />
+          <Division onClick={this.handleDivision} />
+        </div>
       </div>
     );
   }
